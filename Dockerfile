@@ -5,4 +5,4 @@ COPY app.py /code/app.py
 
 ENV FLASK_APP=app.py
 WORKDIR /code
-ENTRYPOINT ["flask", "run"]
+ENTRYPOINT ["flask", "run", "-h", "0.0.0.0"]
